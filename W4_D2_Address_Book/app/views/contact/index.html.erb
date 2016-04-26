@@ -1,0 +1,20 @@
+<h3>Your contact list:</h3>
+
+<ul>
+  <% @contacts.each do |contact| %>
+    <li><%= "#{contact.name} -- #{contact.address} -- #{contact.phone_number} -- #{contact.email_address}" %></li>
+  <% end %>
+</ul>
+
+<ul>
+  <% @contacts.each do |contact| %>
+    <li><a href="http://localhost:3000/contacts/<%= contact.id %>"><%= contact.name %></a>
+      <% if contact.favourite == true %>
+        <img src="https://pbs.twimg.com/profile_images/448471372436471809/JIAJGn9s_400x400.jpeg
+          " alt="Smiley face" height="12" width="12">
+     <% end %>
+    </li>
+  <% end %>
+</ul>
+
+<a href="http://localhost:3000/contacts/new">Add a contact</a>

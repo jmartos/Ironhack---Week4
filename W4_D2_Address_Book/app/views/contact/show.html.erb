@@ -1,0 +1,31 @@
+<ul>
+    <li><%= "#{@selected_contact.name} -- #{@selected_contact.address} -- #{@selected_contact.phone_number} -- #{@selected_contact.email_address}" %></li>
+</ul>
+
+
+
+<form action="/contacts/<%= @selected_contact.id %>" method="POST">
+  <label for="fav">Fav :)</label>
+  <input type="radio" name="true" id="true" value="true"><br>
+
+  <label for="no_fav">No Fav :(</label>
+  <input type="radio" name="false" id="false" value="false"><br>
+
+  <button type="submit">Add to favorites</button>
+  <input type="hidden" name="authenticity_token"
+      value="<%= form_authenticity_token %>">
+</form>
+
+<hr>
+
+
+
+<!-- <form action="/contacts/<%= @selected_contact.id %>" method="POST">
+  <input type="radio" name="true" value="true"> Fav<br>
+  <input type="radio" name="false" value="false"> No Fav<br>
+
+  <button type="submit">Add/Delete to/from favorites</button>
+  <input type="hidden" name="authenticity_token"
+      value="<%= form_authenticity_token %>">
+</form> -->
+
