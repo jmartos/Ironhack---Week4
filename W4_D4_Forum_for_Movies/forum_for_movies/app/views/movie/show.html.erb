@@ -1,0 +1,10 @@
+<h3><%= "#{@movie.title}" %></h3>
+
+<ul>
+      <li><img src=<% "#{@movie.poster}" %> alt="poster"></li>
+      <li><%= "#{@movie.year}" %></li>
+      <li><%= "#{@movie.synopsis}" %></li>
+</ul>
+
+<a href="http://localhost:3000/movies/<%= @movie.id %>/show/new">Comment</a><br>
+

@@ -1,0 +1,6 @@
+<h3>Results:</h3>
+<ul>
+   <% @movies.each do |movie| %>
+      <li><a href="http://localhost:3000/movies/<%= movie.id %>/show"><%= "#{movie.title} " %></a></li>
+       <% end %>
+</ul>
