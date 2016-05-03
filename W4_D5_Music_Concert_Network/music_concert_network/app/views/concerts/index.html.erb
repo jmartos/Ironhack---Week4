@@ -1,0 +1,25 @@
+<h1>Today´s concerts!!</h1>
+<ul>
+  <% if @concerts_today == [] %>
+    <li>There´s no concerts today</li>
+    <%= image_tag "no_concert.jpg", :id => "img_no_concert"%>
+  <% else %>
+   <% @concerts_today.each do |concert| %>
+      <li><a href="http://localhost:3000/concerts/<%= concert.id %>"><%= "#{concert.artist} " %></a><%= concert.date %></li>
+       <% end %>
+  <% end %>
+</ul>
+
+<aside>
+<h4>Next month concerts</h4>
+<ul>
+  <% if @concerts_next_month == [] %>
+    <li>There´s no concerts next month</li>
+  <% else %>
+   <% @concerts_next_month.each do |concert| %>
+      <li><a href="http://localhost:3000/concerts/<%= concert.id %>"><%= "#{concert.artist} " %></a><%= concert.date %></li>
+       <% end %>
+    <% end %>
+</ul>
+<button><a href="http://localhost:3000/concerts/new">Add a concert</a></button>
+</aside>

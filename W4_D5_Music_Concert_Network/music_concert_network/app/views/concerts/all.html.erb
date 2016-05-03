@@ -1,0 +1,8 @@
+<h1>List of all concerts</h1>
+<ul>
+   <% @concerts.each do |concert| %>
+      <li><a href="http://localhost:3000/concerts/<%= concert.id %>"><%= "#{concert.artist} " %></a><%= concert.date %></li>
+       <% end %>
+</ul>
+
+<button><a href="http://localhost:3000/concerts/new">Add a concert</a></button>

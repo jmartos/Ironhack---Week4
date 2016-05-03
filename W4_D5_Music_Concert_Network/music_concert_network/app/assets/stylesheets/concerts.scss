@@ -1,0 +1,71 @@
+header .container {
+  font-family: 'Montserrat', sans-serif;
+  background: #00CCFF ;
+  width: auto;
+  height: 100px;
+  text-align: left;
+  padding-top: 15px;
+}
+
+header .col-md-3 {
+  font-family: 'Montserrat', sans-serif;
+  background: #00CCFF;
+  width: auto;
+  color: #993399;
+}
+
+#img_no_concert {
+  float: middle;
+  height: 200px;
+  width: 400px;
+  margin: 20px 10px 20px 0;
+}
+
+body {
+  background: #F0F0F0;
+  color: #000000;
+  margin:  0px;
+  padding: 15px;
+  margin: 0px;
+
+}
+
+aside {
+  position: absolute;
+  right: 0; 
+  top: 150px; 
+  bottom: 0;
+  width: 500px;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center; 
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+footer {
+  font-family: 'Montserrat', sans-serif;
+  background: #292929;
+  color: #eee;
+  margin:  0px;
+  padding: 15px;
+  margin: 0px;
+}

@@ -1,0 +1,17 @@
+<h3>Concert´s details:</h3>
+
+<ul>
+      <li> <%= "Artist: #{@concert.artist}" %> </li>
+      <br>
+      <li> <%= "Venue: #{@concert.venue}" %> </li>
+      <br>
+      <li> <%= "City: #{@concert.city}" %> </li>
+      <br>
+      <li> <%= "Date: #{@concert.date}" %> </li>
+      <br>
+      <li> <%= "Price: #{@concert.price}" %> </li>
+      <br>
+      <li> <%= "Description: #{@concert.description}" %> </li>
+      <br>
+</ul>
+<button><a href="http://localhost:3000/concerts/<%= @concert.id %>/posts">Comments</a></button>

@@ -1,0 +1,11 @@
+
+<h3>Comments for <%= @concert.artist %></h3>
+<ul>
+   <% @posts.each do |post| %>
+      <li><%= "Author: #{post.author}" %></li>
+      <li><%= "Comment: #{post.comment}" %></li>
+       <% end %>
+</ul>
+
+<button><a href="/concerts/<%= @concert.id %>/posts/new">Add a comment</a></button>
+<br>
